@@ -60,7 +60,9 @@ nav.main a.quiet{color:#5A6478}
 nav.main .btn{min-height:44px;padding:10px 18px;font-size:16px}
 
 /* hero */
-.hero{padding:80px 0}
+.hero{padding:80px 0;position:relative;isolation:isolate;background-color:var(--navy);background-image:url("hero.jpg");background-size:cover;background-position:center right}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(30,45,80,.94) 0%,rgba(30,45,80,.86) 45%,rgba(30,45,80,.55) 100%)}
+@media (max-width:900px){.hero::before{background:rgba(30,45,80,.9)}}
 .hero-grid{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
 .hero-copy{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
 .hero-meta{font-weight:600;color:var(--orange)}
@@ -78,6 +80,14 @@ nav.main .btn{min-height:44px;padding:10px 18px;font-size:16px}
 .choice:hover{border-color:#C5CCD8}
 .choice[aria-pressed="true"]{background:#FFF1E6;border-color:var(--navy)}
 .picker .btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+
+/* services strip */
+.services{border-bottom:1px solid var(--line)}
+.svc-list{list-style:none;margin:0;padding:28px 0;display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}
+.svc-list li{flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:2px}
+.svc-list a{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;color:var(--navy)}
+.svc-list a:hover{color:var(--orange-text)}
+.svc-list span{font-size:15px;color:var(--muted)}
 
 /* cards */
 .tile{text-decoration:none;color:var(--ink);background:var(--mist);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:12px}
@@ -185,6 +195,17 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
   </div>
 </section>
 
+<section class="services" aria-label="What we make">
+  <div class="wrap">
+    <ul class="svc-list">
+      <li><a href="https://www.4zdesign.com/apparel-shop.htm">Custom apparel</a><span>Tees, hoodies, polos, hats, uniforms</span></li>
+      <li><a href="https://www.4zdesign.com/promotional-products.htm">Promotional products</a><span>Drinkware, bags, tech, giveaways</span></li>
+      <li><a href="https://www.4zdesign.com/print.htm">Print &amp; signage</a><span>Business cards, banners, trade show displays</span></li>
+      <li><a href="https://www.4zdesign.com/custom-stores.html">Online team stores</a><span>For companies, schools, and fundraisers</span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="section" id="who">
   <div class="wrap stack" style="gap:40px">
     <h2 class="h2" style="max-width:720px">Start with the goal. We'll figure out the product.</h2>
@@ -230,7 +251,10 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
     <div class="path dark" style="flex-basis:420px">
       <h2>Not sure where to start?</h2>
       <p>Most of our best projects started with "I don't know what I need." A short call is usually enough to point you in the right direction.</p>
-      <a class="btn btn-orange" href="tel:2068185978">Call 206-818-5978</a>
+      <div class="cta-row">
+        <a class="btn btn-orange" href="tel:2068185978">Call 206-818-5978</a>
+        <a class="btn btn-ghost" href="mailto:info@4zdesign.com?subject=Not%20sure%20where%20to%20start&amp;body=What%20I%27m%20working%20on%3A%0A%0AMy%20date%3A%0ABest%20way%20to%20reach%20me%3A%0A">Email us</a>
+      </div>
     </div>
     <div class="path light" style="flex-basis:420px">
       <h2>Know exactly what you want?</h2>
@@ -349,7 +373,7 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
 <footer>
   <div class="wrap foot">
     <div class="stack" style="gap:6px;flex:1 1 280px">
-      <img src="logo-white.png" alt="4Z Design, Marketing &amp; Printing" width="219" height="48" style="height:48px;width:auto;margin-bottom:8px">
+      <img src="logo-white.png" alt="4Z Design, Marketing &amp; Printing" width="219" height="48" style="height:48px;width:auto;align-self:flex-start;margin-bottom:8px">
       <p>12823 72nd Dr SE, Snohomish, WA 98296</p>
       <p><a href="tel:2068185978">206-818-5978</a> &nbsp;|&nbsp; <a href="mailto:info@4zdesign.com">info@4zdesign.com</a></p>
     </div>
