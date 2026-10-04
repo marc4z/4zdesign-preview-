@@ -6,13 +6,15 @@
 <meta name="robots" content="noindex, nofollow">
 <title>4Z Design, Marketing &amp; Printing</title>
 <meta name="description" content="Custom apparel, promotional products, print, and team stores from a family-owned shop in Snohomish County, WA.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#1E2D50; --navy-deep:#142038; --ink:#1E2D3F; --slate:#334A69;
-  --orange:#F37A21; --orange-text:#B4530F; --mist:#F4F6F9; --line:#E3E6EC;
+  --orange:#FE7A16; --orange-text:#B4530F; --mist:#F4F6F9; --line:#E3E6EC;
   --muted:#4A5468; --on-navy:#D6DCE8;
   --display:'Barlow Condensed','Arial Narrow',sans-serif;
   --body:'Barlow','Helvetica Neue',sans-serif;
@@ -49,9 +51,9 @@ p{margin:0}
 /* header */
 header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
 .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:14px;padding-bottom:14px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-mark{width:44px;height:44px;border-radius:6px;background:var(--orange);color:var(--ink);font-family:var(--display);font-weight:800;font-size:24px;display:flex;align-items:center;justify-content:center}
-.logo-text{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:.03em;color:var(--navy)}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:56px;width:auto}
+@media (max-width:640px){.logo img{height:44px}}
 nav.main{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;font-weight:600;font-size:16px}
 nav.main a{text-decoration:none}
 nav.main a.quiet{color:#5A6478}
@@ -62,7 +64,7 @@ nav.main .btn{min-height:44px;padding:10px 18px;font-size:16px}
 .hero-grid{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
 .hero-copy{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
 .hero-meta{font-weight:600;color:var(--orange)}
-.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,6vw,66px);line-height:1.02}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,4.4vw,54px);line-height:1.04}
 .hero .lede{color:var(--on-navy);font-size:20px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .text-link{color:#fff;font-weight:600;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.45);padding:4px 0}
@@ -140,9 +142,8 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="4Z Design home">
-      <span class="logo-mark" aria-hidden="true">4Z</span>
-      <span class="logo-text">DESIGN, MARKETING &amp; PRINTING</span>
+    <a class="logo" href="#top">
+      <img src="logo.png" alt="4Z Design, Marketing &amp; Printing" width="255" height="56">
     </a>
     <nav class="main" aria-label="Main">
       <a href="#how">How we work</a>
@@ -348,7 +349,7 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
 <footer>
   <div class="wrap foot">
     <div class="stack" style="gap:6px;flex:1 1 280px">
-      <p class="foot-name">4Z Design, Marketing &amp; Printing</p>
+      <img src="logo-white.png" alt="4Z Design, Marketing &amp; Printing" width="219" height="48" style="height:48px;width:auto;margin-bottom:8px">
       <p>12823 72nd Dr SE, Snohomish, WA 98296</p>
       <p><a href="tel:2068185978">206-818-5978</a> &nbsp;|&nbsp; <a href="mailto:info@4zdesign.com">info@4zdesign.com</a></p>
     </div>
