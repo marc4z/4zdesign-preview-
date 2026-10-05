@@ -10,19 +10,19 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#1E2D50; --navy-deep:#142038; --ink:#1E2D3F; --slate:#334A69;
   --orange:#FE7A16; --orange-text:#B4530F; --mist:#F4F6F9; --line:#E3E6EC;
   --muted:#4A5468; --on-navy:#D6DCE8;
-  --display:'Barlow Condensed','Arial Narrow',sans-serif;
-  --body:'Barlow','Helvetica Neue',sans-serif;
+  --display:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  --body:'Montserrat','Helvetica Neue',Arial,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;font-family:var(--body);font-size:17px;line-height:1.55;color:var(--ink);background:#fff}
+body{margin:0;font-family:var(--body);font-size:16px;line-height:1.6;color:var(--ink);background:#fff}
 img{max-width:100%;display:block}
 a{color:var(--navy)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
@@ -33,7 +33,7 @@ p{margin:0}
 .mist{background:var(--mist)}
 .dark{background:var(--navy);color:#fff}
 .dark h1,.dark h2,.dark h3{color:#fff}
-.h2{font-family:var(--display);font-weight:800;font-size:clamp(34px,4.5vw,46px);line-height:1.05}
+.h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,38px);line-height:1.15;letter-spacing:-.01em}
 .lede{font-size:19px;color:var(--muted);max-width:620px}
 .stack{display:flex;flex-direction:column;gap:12px}
 .row{display:flex;flex-wrap:wrap;gap:24px}
@@ -66,14 +66,14 @@ nav.main .btn{min-height:44px;padding:10px 18px;font-size:16px}
 .hero-grid{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
 .hero-copy{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
 .hero-meta{font-weight:600;color:var(--orange)}
-.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,4.4vw,54px);line-height:1.04}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.5vw,46px);line-height:1.12;letter-spacing:-.015em}
 .hero .lede{color:var(--on-navy);font-size:20px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .text-link{color:#fff;font-weight:600;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.45);padding:4px 0}
 
 /* picker */
 .picker{flex:1 1 380px;min-width:0;background:#fff;color:var(--ink);border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:14px}
-.picker h2{font-family:var(--display);font-weight:700;font-size:30px}
+.picker h2{font-family:var(--display);font-weight:700;font-size:24px}
 .picker p{font-size:16px;color:var(--muted)}
 .choices{display:flex;flex-direction:column;gap:10px;border:0;margin:0;padding:0}
 .choice{text-align:left;font:inherit;font-size:16px;font-weight:600;padding:14px 16px;border-radius:8px;min-height:48px;background:var(--mist);border:2px solid transparent;color:var(--ink);cursor:pointer}
@@ -85,21 +85,21 @@ nav.main .btn{min-height:44px;padding:10px 18px;font-size:16px}
 .services{border-bottom:1px solid var(--line)}
 .svc-list{list-style:none;margin:0;padding:28px 0;display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}
 .svc-list li{flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:2px}
-.svc-list a{font-family:var(--display);font-weight:700;font-size:22px;text-decoration:none;color:var(--navy)}
+.svc-list a{font-family:var(--display);font-weight:700;font-size:18px;text-decoration:none;color:var(--navy)}
 .svc-list a:hover{color:var(--orange-text)}
-.svc-list span{font-size:15px;color:var(--muted)}
+.svc-list span{font-size:14px;color:var(--muted)}
 
 /* cards */
 .tile{text-decoration:none;color:var(--ink);background:var(--mist);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:12px}
 .tile:hover{background:#E9EDF3}
-.tile h3,.step h3{font-family:var(--display);font-size:26px;font-weight:700}
+.tile h3,.step h3{font-family:var(--display);font-size:20px;font-weight:700}
 .tile p,.step p{font-size:16px}
 .step{background:#fff;border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:10px}
-.step-num{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--orange-text)}
+.step-num{font-family:var(--display);font-weight:700;font-size:28px;line-height:1;color:var(--orange-text)}
 ol.steps{list-style:none;margin:0;padding:0}
 
 .path{border-radius:12px;padding:40px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
-.path h2{font-family:var(--display);font-weight:800;font-size:36px}
+.path h2{font-family:var(--display);font-weight:700;font-size:28px}
 .path.dark p{color:var(--on-navy)}
 .path.light{background:var(--mist)}
 
@@ -131,7 +131,7 @@ figure.quote figcaption{font-weight:700;color:var(--navy)}
 .idea p{font-size:16px}
 
 .closing{text-align:center;display:flex;flex-direction:column;gap:20px;align-items:center;max-width:860px;margin:0 auto}
-.closing h2{font-family:var(--display);font-weight:800;font-size:clamp(38px,5vw,52px);line-height:1.05}
+.closing h2{font-family:var(--display);font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.15}
 .closing p{color:var(--on-navy);font-size:19px}
 
 footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
@@ -323,7 +323,7 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
   <div class="wrap maui">
     <div class="maui-ph">[Maui photo]</div>
     <div class="stack" style="flex:1 1 420px;min-width:0">
-      <h2 style="font-family:var(--display);font-weight:800;font-size:34px">And then there's Maui</h2>
+      <h2 style="font-family:var(--display);font-weight:700;font-size:28px">And then there's Maui</h2>
       <p>Lagotto Romagnolo, delivery co-pilot, unofficial intern. Strong opinions on swag. If he had thumbs, he'd probably be running the place.</p>
     </div>
   </div>
@@ -332,7 +332,7 @@ footer{background:var(--navy-deep);color:#C5CCD8;font-size:15px}
 <section class="section" id="catalog" style="padding:72px 0">
   <div class="wrap catalog">
     <div class="stack" style="flex:1 1 420px;min-width:0">
-      <h2 style="font-family:var(--display);font-weight:800;font-size:34px">Prefer to browse first?</h2>
+      <h2 style="font-family:var(--display);font-weight:700;font-size:28px">Prefer to browse first?</h2>
       <p>The full product catalog is still here. Find something you like and we'll tell you honestly if it's the right fit.</p>
       <div class="chips">
         <a class="chip" href="https://www.4zdesign.com/apparel-shop.htm">Apparel</a>
